@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MedwStu</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedwStu</title>
 </head>
 <body>
-  <h1>Chào mừng đến MedwStu</h1>
-  <a href="/upload">Upload bài giảng</a>
+    <h1>Chào mừng đến MedwStu</h1>
+
+    <div class="d-flex justify-content-end">
+        <a href="{{ url_for('logout') }}" class="btn btn-danger">Đăng Xuất</a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('upload') }}">Tải lên bài giảng</a></li>
+            <li><a href="{{ url_for('quiz') }}">Quiz Trắc Nghiệm</a></li>
+            <li><a href="{{ url_for('quiz_timer') }}">Quiz Theo Giờ</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
+

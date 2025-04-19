@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedwStu - Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Chào mừng đến trang chính của MedwStu, {{ session['username'] }}!</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('upload') }}">Upload bài giảng</a></li>
+                <li><a href="{{ url_for('quiz') }}">Quiz Trắc Nghiệm</a></li>
+                <li><a href="{{ url_for('quiz_timer') }}">Quiz Theo Giờ</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
